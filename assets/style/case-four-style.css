@@ -1,0 +1,55 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+section{
+
+    width: 100%;
+    height: 100vh;
+    /*background-color: lightcyan;*/
+    position: relative;
+}
+
+div{
+
+    width: 25px;
+    height: 25px;
+    border: 2px solid crimson;
+    border-radius: 100%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    margin: auto;
+    animation-name: water-drop;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-out;
+}
+
+@keyframes water-drop {
+
+    from{
+
+    }
+
+    to{
+
+        width: 200px;
+        height: 200px;
+        /*border: 0.1px solid #ffffff;*/
+        opacity: 0;
+    }
+}
+
+
+
+
+
+
+
+
+

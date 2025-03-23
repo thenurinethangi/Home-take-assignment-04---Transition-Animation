@@ -1,0 +1,169 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+section{
+
+    width: 100vw;
+    height: 100vh;
+    background-image: url("../image/case-six-image/sky.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    position: relative;
+}
+
+#road-box{
+
+    width: 470vw;
+    height: 40vh;
+    background-image: url("../image/case-six-image/road.jpg");
+    /*background-size: cover;*/
+    background-repeat: repeat-x;
+    animation-name: moveRoad;
+    animation-duration: 10s;
+    animation-delay: 1s;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-out;
+
+}
+
+
+#city-box{
+
+    width: 470vw;
+    height: 50vh;
+    background-image: url("../image/case-six-image/city.png");
+    /*background-size: cover;*/
+    background-repeat: repeat-x;
+    position: absolute;
+    bottom: 185px;
+    animation-name: moveCity;
+    animation-duration: 10s;
+    animation-delay: 1s;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-out;
+}
+
+
+#car-box{
+
+    width: 300px;
+    height: 100px;
+    position: absolute;
+    bottom: 150px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+
+}
+
+
+#car{
+
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+
+.wheel{
+
+    width: 50px;
+    height: 50px;
+    animation-name: wheel;
+    animation-duration: 10s;
+    animation-delay: 1s;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-out;
+}
+
+
+#wheel-box{
+
+    width: 200px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    position: absolute;
+    top: 50px;
+}
+
+
+@keyframes moveCity {
+
+    from{
+       transform: translateX(0);
+    }
+
+    to{
+        transform: translateX(-180vw);
+    }
+}
+
+
+@keyframes moveRoad {
+
+    from{
+        transform: translateX(0);
+    }
+
+    to{
+        transform: translateX(-180vw);
+    }
+}
+
+
+@keyframes wheel {
+
+    0%{
+        transform: rotate(0deg);
+    }
+
+    10%{
+        transform: rotate(360deg);
+    }
+
+    20%{
+        transform: rotate(720deg);
+    }
+
+    30%{
+        transform: rotate(1080deg);
+    }
+
+    40%{
+        transform: rotate(1440deg);
+    }
+
+    50%{
+        transform: rotate(1800deg);
+    }
+
+    60%{
+        transform: rotate(2100deg);
+    }
+    70%{
+        transform: rotate(2370deg);
+    }
+    80%{
+        transform: rotate(2650deg);
+    }
+    90%{
+        transform: rotate(2800deg);
+    }
+    100%{
+        transform: rotate(2870deg);
+    }
+}
+
+
+
+

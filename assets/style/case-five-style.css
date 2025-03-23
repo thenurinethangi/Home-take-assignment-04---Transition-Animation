@@ -1,0 +1,63 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+section{
+
+    width: 100%;
+    height: 100vh;
+    background-color: #B39DDB;
+    overflow: hidden;
+}
+
+div>div{
+
+    width: 400vw;
+    height: 100vh;
+    background-color: #B39DDB;
+    overflow-x: hidden;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    animation-name: slider;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+div>div>img{
+
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+    object-position: center;
+}
+
+
+@keyframes slider {
+
+    0%{
+        transform: translate(-0vw);
+    }
+
+    35%{
+        transform: translate(-100vw);
+    }
+
+    75%{
+        transform: translate(-200vw);
+    }
+
+    100%{
+        transform: translate(-300vw);
+    }
+}
+
+
+
+
+
+
